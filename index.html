@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050816">
+  <meta name="description" content="Top Ilova — eng foydali va mashhur ilovalarni bir joydan toping.">
+  <title>Top Ilova | Eng foydali ilovalar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  <!-- ANIMATSIYALI FON -->
+  <div class="ambient-bg" aria-hidden="true">
+    <div class="glow glow-one"></div>
+    <div class="glow glow-two"></div>
+    <div class="glow glow-three"></div>
+    <div class="floating-icons">
+      <i class="fa-brands fa-telegram"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-solid fa-robot"></i>
+      <i class="fa-brands fa-google"></i>
+      <i class="fa-brands fa-youtube"></i>
+      <i class="fa-solid fa-mobile-screen-button"></i>
+      <i class="fa-brands fa-whatsapp"></i>
+      <i class="fa-solid fa-wand-magic-sparkles"></i>
+    </div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- 1. LOGO -->
+  <section class="logo-screen screen" id="logoScreen">
+    <div class="logo-intro">
+      <div class="logo-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+      <div class="intro-logo"><span>TOP</span> ILOVA</div>
+      <div class="intro-subtitle">SMART APP STORE</div>
+      <div class="logo-loader"><div class="loader-line"></div></div>
+    </div>
+  </section>
+
+  <!-- 2. XUSH KELIBSIZ -->
+  <section class="hello-screen screen" id="helloScreen">
+    <div class="hello-box glass">
+      <div class="hello-icon"><i class="fa-solid fa-hand-sparkles"></i></div>
+      <div class="hello-label">TOP ILOVA PLATFORMASI</div>
+      <h1>Assalomu alaykum!</h1>
+      <h2>Hurmatli foydalanuvchi</h2>
+      <div class="blue-line"></div>
+      <p>Top Ilova saytiga xush kelibsiz.</p>
+      <p>Yaratuvchi:
+        <a href="https://t.me/qoshmurodov1" target="_blank" rel="noopener" class="creator-link">Qo'shmurodov Sherzod</a>
+      </p>
+      <div class="loading-dots"><span></span><span></span><span></span></div>
+    </div>
+  </section>
+
+  <!-- 3. BOSHLANG'ICH OYNA -->
+  <section class="start-screen screen" id="startScreen">
+    <div class="start-box glass">
+      <div class="start-logo"><span>TOP</span> ILOVA<small>SMART APP STORE</small></div>
+      <h1>Eng foydali ilovalar<br>bir joyda</h1>
+      <p>Kerakli ilovalarni qidiring, tanlang va bir zumda oching.</p>
+      <button id="continueButton" class="primary-btn">Hisobga kirish <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </section>
+
+  <!-- 4. LOGIN VA RO'YXATDAN O'TISH -->
+  <section class="auth-screen screen" id="authScreen">
+    <div class="auth-card glass">
+      <a href="#" class="auth-back" id="authBack"><i class="fa-solid fa-arrow-left"></i> Orqaga</a>
+      <div class="auth-brand">
+        <div class="auth-logo"><i class="fa-solid fa-mobile-screen-button"></i></div>
+        <div><div class="auth-brand-name"><span>TOP</span> ILOVA</div><small>SMART APP STORE</small></div>
+      </div>
+      <div class="auth-heading">
+        <span class="auth-tag"><i class="fa-solid fa-shield-halved"></i> SHAXSIY HISOB</span>
+        <h1 id="authTitle">Xush kelibsiz!</h1>
+        <p id="authDescription">Hisobingizga kirib, ilovalar olamini kashf eting.</p>
+      </div>
+      <form id="authForm">
+        <label for="username">Username</label>
+        <div class="auth-input">
+          <i class="fa-solid fa-at"></i>
+          <input id="username" name="username" type="text" placeholder="O'zingiz istagan username" autocomplete="username" required>
+        </div>
+        <label for="password">Parol</label>
+        <div class="auth-input">
+          <i class="fa-solid fa-lock"></i>
+          <input id="password" name="password" type="password" placeholder="O'zingiz istagan parol" autocomplete="current-password" required>
+          <button type="button" id="togglePassword" class="eye-button" aria-label="Parolni ko'rsatish"><i class="fa-solid fa-eye"></i></button>
+        </div>
+        <p class="auth-error" id="authError" role="alert"></p>
+        <button class="primary-btn auth-submit" id="submitAuth" type="submit">Hisobga kirish <i class="fa-solid fa-arrow-right"></i></button>
+      </form>
+      <div class="auth-switch"><span id="switchText">Hisobingiz yo'qmi?</span><button id="switchMode" type="button">Hisob yaratish</button></div>
+      <div class="auth-note"><i class="fa-solid fa-circle-info"></i> Demo hisob ushbu brauzerda saqlanadi.</div>
+    </div>
+  </section>
+
+  <!-- 5. ASOSIY SAYT -->
+  <main class="main-site" id="mainSite">
+    <div class="container">
+      <header>
+        <a href="#" class="site-logo" id="homeLogo"><span>TOP</span> ILOVA<small>SMART APP STORE</small></a>
+        <div class="header-actions">
+          <span id="userBadge" class="user-badge"><i class="fa-solid fa-user"></i> Foydalanuvchi</span>
+          <button class="instagram-btn" id="instagramButton" type="button"><i class="fa-brands fa-instagram"></i> Instagram</button>
+          <button class="logout-btn" id="logoutButton" type="button" title="Hisobdan chiqish"><i class="fa-solid fa-right-from-bracket"></i></button>
+        </div>
+      </header>
+      <section class="hero">
+        <div class="hero-tag"><span></span> SIZ UCHUN YARATILGAN PLATFORMА</div>
+        <h1>Top Ilova<span>.</span></h1>
+        <p>Eng foydali va mashhur ilovalarni bir joydan tez va oson toping.</p>
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="searchInput" placeholder="Telegram, ChatGPT, Canva...">
+          <button id="searchButton" type="button">Qidirish</button>
+        </div>
+      </section>
+      <div class="section-heading">
+        <div><span class="section-label">TANLANGAN ILOVALAR</span><h2 class="section-title">Mashhur ilovalar</h2></div>
+        <span class="app-count" id="appCount">10 ta ilova</span>
+      </div>
+      <div class="cards" id="results"></div>
+      <section class="contact-grid">
+        <div class="contact-box glass">
+          <div class="contact-icon"><i class="fa-solid fa-comments"></i></div>
+          <h2>Bog'lanish</h2>
+          <p>Reklama, hamkorlik va takliflar uchun Telegram orqali murojaat qiling.</p>
+          <a href="https://t.me/qoshmurodov1" target="_blank" rel="noopener" class="action-btn"><i class="fa-brands fa-telegram"></i> Bog'lanish</a>
+        </div>
+        <div class="contact-box glass">
+          <div class="contact-icon"><i class="fa-solid fa-square-plus"></i></div>
+          <h2>Ilova yuborish</h2>
+          <p>O'z ilovangizni Top Ilova platformasiga qo'shish uchun murojaat qiling.</p>
+          <a href="https://t.me/qoshmurodov1" target="_blank" rel="noopener" class="action-btn"><i class="fa-solid fa-plus"></i> Ilova yuborish</a>
+        </div>
+      </section>
+      <section class="bot-box glass">
+        <div class="bot-icon"><i class="fa-brands fa-telegram"></i></div>
+        <div class="bot-content">
+          <span class="section-label">TOP ILOVA BOT</span>
+          <h2>Ilovalar olami Telegramda</h2>
+          <p>Foydali ilovalar va yangi tavsiyalarni Telegram botimizdan toping.</p>
+          <a href="https://t.me/topilovalar_bot" target="_blank" rel="noopener" class="bot-btn"><i class="fa-brands fa-telegram"></i> Telegram Botga kirish <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </section>
+      <footer>
+        <div class="footer-logo"><span>TOP</span> ILOVA</div>
+        <p>© 2026 Top Ilova. Barcha huquqlar himoyalangan.</p>
+        <p>Yaratuvchi: <a href="https://t.me/qoshmurodov1" target="_blank" rel="noopener" class="creator-link">Qo'shmurodov Sherzod</a></p>
+      </footer>
+    </div>
+  </main>
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
